@@ -1,0 +1,32 @@
+/* src/Toolbar.css */
+
+.toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbar-button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .toolbar-button:hover {
+    background-color: #e6e6e6;
+    border-color: #999;
+  }
+  
+  .toolbar-button.active {
+    background-color: #d4d4d4;
+    border-color: #666;
+  }
+  

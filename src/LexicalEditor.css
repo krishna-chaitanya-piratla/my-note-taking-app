@@ -1,0 +1,58 @@
+.editor-container {
+    position: relative;
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editor-input {
+    flex: 1; /* Take up all available vertical space */
+    outline: none;
+    font-family: 'Wotfard', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-y: auto; /* Enable vertical scrolling within the editor if content exceeds */
+  }
+  
+  .editor-placeholder {
+    color: #888;
+    font-style: italic;
+    position: absolute;
+    top: 6rem;
+    left: 20px;
+    pointer-events: none;
+    font-family: 'Wotfard', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .editor-container:focus-within .editor-placeholder {
+    opacity: 0;
+  }
+  
+
+  /* Theme Classes for Text Formats */
+.editor-text-bold {
+    font-weight: bold;
+  }
+  
+  .editor-text-italic {
+    font-style: italic;
+  }
+  
+  .editor-text-underline {
+    text-decoration: underline;
+  }
+  
+  .editor-text-strikethrough {
+    text-decoration: line-through;
+  }
